@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Póster - Sistemas Expertos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        darkblue: '#0B1C3F',
+                        lightblue: '#EBF1F8',
+                        accentblue: '#1E62A6',
+                        accentgreen: '#4CAF50',
+                        accentorange: '#F59E0B',
+                        accentpurple: '#8B5CF6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="py-10 flex justify-center text-gray-800 bg-gray-100">
+
+    <div class="poster-container w-full max-w-[1200px] bg-lightblue p-8 border-4 border-darkblue relative flex flex-col gap-6 mx-4">
+
+        <header class="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 relative z-10">
+            
+            <div class="flex flex-col items-center bg-white border-[3px] border-darkblue p-4 w-40 text-center">
+                <img src="logo.png" alt="">
+            </div>
+
+            <div class="flex-1 flex flex-col items-center text-center">
+                <h1 class="text-6xl md:text-7xl font-black text-darkblue leading-none tracking-tight mb-2">SISTEMAS<br>EXPERTOS</h1>
+                <h2 class="text-2xl font-semibold text-accentblue mb-5">Fundamentos, Arquitectura y Aplicaciones</h2>
+                <div class="bg-darkblue text-white px-8 py-2 text-xs md:text-sm font-bold tracking-wide">
+                    CONOCIMIENTO HUMANO. RAZONAMIENTO INTELIGENTE. DECISIONES ACERTADAS.
+                </div>
+            </div>
+
+            <div class="flex flex-col items-end gap-3 w-48">
+                <div class="bg-darkblue text-white p-3 w-full space-y-2">
+                    <div class="flex items-center gap-3 border-b border-gray-600 pb-2">
+                        <i class="fa-solid fa-user text-lg"></i>
+                        <span class="font-semibold text-sm">Angy Hidalgo</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-id-card text-lg"></i>
+                        <span class="font-semibold text-sm">C.I: 31684161</span>
+                    </div>
+                </div>
+                <div class="mt-4 text-darkblue pl-8">
+                    <i class="fa-solid fa-head-side-virus text-7xl"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+
+            <div class="col-span-1 bg-white border-2 border-darkblue overflow-hidden flex flex-col">
+                <div class="bg-darkblue text-white p-4 font-bold text-lg flex items-center gap-3">
+                    <i class="fa-solid fa-brain text-xl"></i> 1. INTRODUCCIÓN A LOS SISTEMAS EXPERTOS
+                </div>
+                <div class="p-5 flex flex-col gap-6 flex-1 text-sm">
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-darkblue text-white rounded-full w-12 h-12 flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <div>
+                            <strong class="text-darkblue block mb-1">Definición:</strong>
+                            Un sistema experto (SE) es un programa informático que utiliza conocimiento especializado de expertos humanos para resolver problemas complejos y apoyar la toma de decisiones en un dominio específico.
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-darkblue text-white rounded-full w-12 h-12 flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                        </div>
+                        <div>
+                            <strong class="text-darkblue block mb-1">Origen:</strong>
+                            Los sistemas expertos surgieron durante las décadas de 1960 y 1970 como una de las primeras aplicaciones exitosas de la inteligencia artificial. Entre los primeros desarrollos destacan DENDRAL (1965) and MYCIN (década de 1970), impulsados por Edward Feigenbaum y otros investigadores.
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-darkblue text-white rounded-full w-12 h-12 flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <div>
+                            <strong class="text-darkblue block mb-1">Propósito general:</strong>
+                            Resolver problemas especializados y apoyar la toma de decisiones mediante el conocimiento de expertos humanos representado en reglas, en lugar de programación convencional.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1 md:col-span-2 bg-white border-2 border-darkblue overflow-hidden flex flex-col">
+                <div class="bg-darkblue text-white p-4 font-bold text-lg flex items-center gap-3">
+                    <i class="fa-solid fa-gear text-xl"></i> 2. FUNCIONES Y VENTAJAS
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                        <div>
+                            <h3 class="text-accentblue font-bold text-lg mb-4">¿QUÉ HACEN?</h3>
+                            <ul class="space-y-4 text-sm font-medium">
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-accentgreen text-lg mt-0.5"></i>
+                                    Representan el conocimiento de expertos en forma de reglas.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-accentgreen text-lg mt-0.5"></i>
+                                    Razonan sobre los hechos para obtener conclusiones.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-accentgreen text-lg mt-0.5"></i>
+                                    Explican sus decisiones.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-accentgreen text-lg mt-0.5"></i>
+                                    Aprenden y se actualizan a medida que aumenta el conocimiento.
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="border-l border-gray-200 pl-8">
+                            <h3 class="text-accentblue font-bold text-lg mb-4">¿QUÉ PROBLEMAS RESUELVEN?</h3>
+                            <ul class="space-y-4 text-sm font-medium">
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle text-accentblue text-[10px] mt-1.5"></i>
+                                    Problemas complejos con mucha incertidumbre.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle text-accentblue text-[10px] mt-1.5"></i>
+                                    Situaciones donde no siempre hay algoritmos exactos.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle text-accentblue text-[10px] mt-1.5"></i>
+                                    Tareas que requieren experiencia humana costosa o escasa.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="border-gray-200 mb-6">
+
+                    <h3 class="text-center font-bold text-darkblue mb-6">VENTAJAS EN ENTORNOS REALES</h3>
+                    <div class="flex justify-between items-start px-4 text-center text-xs font-semibold">
+                        <div class="flex flex-col items-center gap-2 w-1/4">
+                            <div class="text-accentgreen text-4xl mb-1"><i class="fa-solid fa-sack-dollar"></i></div>
+                            Reducción de<br>costos y tiempo
+                        </div>
+                        <div class="flex flex-col items-center gap-2 w-1/4">
+                            <div class="text-darkblue text-4xl mb-1"><i class="fa-solid fa-shield-halved"></i></div>
+                            Decisiones más<br>consistentes y<br>confiables
+                        </div>
+                        <div class="flex flex-col items-center gap-2 w-1/4">
+                            <div class="text-darkblue text-4xl mb-1"><i class="fa-solid fa-comments"></i></div>
+                            Disponibilidad<br>24/7
+                        </div>
+                        <div class="flex flex-col items-center gap-2 w-1/4">
+                            <div class="text-darkblue text-4xl mb-1"><i class="fa-solid fa-graduation-cap"></i></div>
+                            Retención y<br>transferencia de<br>conocimiento
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1 md:col-span-3 bg-white border-2 border-darkblue overflow-hidden">
+                <div class="bg-darkblue text-white p-4 font-bold text-lg flex items-center gap-3">
+                    <i class="fa-solid fa-building-columns text-xl"></i> 3. ARQUITECTURA BÁSICA DE UN SISTEMA EXPERTO
+                </div>
+                <div class="p-6">
+                    <p class="text-center text-sm font-semibold mb-6">Un sistema experto separa el conocimiento (qué se sabe) del mecanismo de razonamiento (cómo se usa).</p>
+                    
+                    <div class="flex flex-col md:flex-row items-stretch justify-between gap-4 mb-4">
+                        
+                        <div class="flex-1 flex flex-col md:flex-row items-center gap-2">
+                            <div class="bg-white border-2 border-accentpurple rounded-xl p-4 text-center flex-1 h-full flex flex-col items-center justify-center">
+                                <i class="fa-solid fa-book-journal-whills text-3xl text-accentpurple mb-2"></i>
+                                <h4 class="font-bold text-xs mb-2 leading-tight">BASE DE<br>CONOCIMIENTOS</h4>
+                                <p class="text-[11px] leading-tight text-gray-600">Almacena el conocimiento del experto en forma de reglas, hechos y heurísticas.</p>
+                            </div>
+                            
+                            <i class="fa-solid fa-arrows-left-right text-gray-400 text-xl hidden md:block"></i>
+                            <i class="fa-solid fa-arrows-up-down text-gray-400 text-xl block md:hidden"></i>
+
+                            <div class="bg-white border-2 border-accentgreen rounded-xl p-4 text-center flex-1 h-full flex flex-col items-center justify-center">
+                                <i class="fa-solid fa-database text-3xl text-accentgreen mb-2"></i>
+                                <h4 class="font-bold text-xs mb-1 leading-tight">BASE DE<br>HECHOS</h4>
+                                <span class="text-[9px] font-bold text-gray-400 mb-2">(MEMORIA DE TRABAJO)</span>
+                                <p class="text-[11px] leading-tight text-gray-600">Contiene los datos del problema actual y los hechos que se conocen durante la ejecución.</p>
+                            </div>
+
+                            <i class="fa-solid fa-arrows-left-right text-gray-400 text-xl hidden md:block"></i>
+                            <i class="fa-solid fa-arrows-up-down text-gray-400 text-xl block md:hidden"></i>
+
+                            <div class="bg-white border-2 border-accentorange rounded-xl p-4 text-center flex-1 h-full flex flex-col items-center justify-center">
+                                <i class="fa-solid fa-gear text-3xl text-accentorange mb-2"></i>
+                                <h4 class="font-bold text-xs mb-2 leading-tight">MOTOR DE<br>INFERENCIA</h4>
+                                <p class="text-[11px] leading-tight text-gray-600">Aplica las reglas sobre los hechos para deducir nuevos hechos y llegar a conclusiones.</p>
+                            </div>
+
+                            <i class="fa-solid fa-arrows-left-right text-gray-400 text-xl hidden md:block"></i>
+                            <i class="fa-solid fa-arrows-up-down text-gray-400 text-xl block md:hidden"></i>
+
+                            <div class="bg-white border-2 border-accentblue rounded-xl p-4 text-center flex-1 h-full flex flex-col items-center justify-center">
+                                <i class="fa-solid fa-desktop text-3xl text-accentblue mb-2"></i>
+                                <h4 class="font-bold text-xs mb-2 leading-tight">INTERFAZ DE<br>USUARIO</h4>
+                                <p class="text-[11px] leading-tight text-gray-600">Permite la comunicación entre el usuario y el sistema: ingreso de datos, consultas y presentación de resultados.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-64 border-t-2 md:border-t-0 md:border-l-2 border-dashed border-gray-300 pt-4 md:pt-0 md:pl-6 flex flex-col justify-center">
+                            <h4 class="text-accentblue font-bold text-center mb-3">¿CÓMO FUNCIONA?</h4>
+                            <div class="flex items-start gap-3 text-xs leading-relaxed">
+                                <i class="fa-regular fa-lightbulb text-3xl text-darkblue mt-1"></i>
+                                <p>El usuario proporciona información. El motor de inferencia utiliza las reglas y los hechos para razonar y ofrecer una conclusión o recomendación, la cual puede ser explicada al usuario.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1 bg-white border-2 border-darkblue overflow-hidden flex flex-col">
+                <div class="bg-darkblue text-white p-4 font-bold text-lg flex items-center gap-3">
+                    <i class="fa-solid fa-network-wired text-xl"></i> 4. MÉTODOS DE RAZONAMIENTO
+                </div>
+                <div class="p-5 flex flex-col gap-5 flex-1 text-xs">
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-accentgreen text-white rounded-full w-10 h-10 flex items-center justify-center shrink-0 text-lg">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div>
+                            <strong class="text-darkblue block text-sm mb-1">Encadenamiento hacia adelante<br>(Forward Chaining)</strong>
+                            Parte de los hechos conocidos y aplica reglas para llegar a nuevas conclusiones hasta alcanzar un objetivo.<br>
+                            <span class="italic text-gray-600 mt-1 block">Útil para predicción y monitoreo.</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-accentblue text-white rounded-full w-10 h-10 flex items-center justify-center shrink-0 text-lg">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div>
+                            <strong class="text-darkblue block text-sm mb-1">Encadenamiento hacia atrás<br>(Backward Chaining)</strong>
+                            Parte de una hipótesis u objetivo y busca reglas que puedan demostrarlo, trabajando hacia atrás hasta los hechos conocidos.<br>
+                            <span class="italic text-gray-600 mt-1 block">Útil para diagnóstico y resolución de problemas.</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-accentpurple text-white rounded-full w-10 h-10 flex items-center justify-center shrink-0 text-xl font-serif italic">
+                            μ
+                        </div>
+                        <div>
+                            <strong class="text-darkblue block text-sm mb-1">Lógica difusa (opcional en SE)</strong>
+                            Permite manejar incertidumbre y conceptos vagos mediante grados de pertenencia entre 0 y 1. Se integra con SE para mejorar la toma de decisiones en entornos imprecisos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1 bg-white border-2 border-darkblue overflow-hidden flex flex-col">
+                <div class="bg-darkblue text-white p-4 font-bold text-lg flex items-center gap-3">
+                    <i class="fa-solid fa-briefcase text-xl"></i> 5. EJEMPLOS DE APLICACIÓN REAL
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <div class="space-y-4 mb-6 text-xs">
+                        <div class="flex gap-3 items-center">
+                            <div class="border border-red-200 text-red-600 rounded-full w-10 h-10 flex items-center justify-center shrink-0 text-xl bg-red-50">
+                                <i class="fa-solid fa-suitcase-medical"></i>
+                            </div>
+                            <div>
+                                <strong class="text-darkblue text-sm block">MYCIN (Medicina)</strong>
+                                Sistema experto que recomendaba antibióticos para infecciones bacterianas.
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <div class="border border-blue-200 text-accentblue rounded-full w-10 h-10 flex items-center justify-center shrink-0 text-lg bg-blue-50">
+                                <i class="fa-solid fa-desktop"></i>
+                            </div>
+                            <div>
+                                <strong class="text-darkblue text-sm block">XCON (Configuración de computadores)</strong>
+                                Asistía a ingenieros en la configuración óptima de sistemas de cómputo (DEC).
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <div class="border border-green-200 text-green-600 rounded-full w-10 h-10 flex items-center justify-center shrink-0 text-lg bg-green-50">
+                                <i class="fa-solid fa-flask"></i>
+                            </div>
+                            <div>
+                                <strong class="text-darkblue text-sm block">DENDRAL (Química)</strong>
+                                Infería estructuras moleculares a partir de espectros de masas.
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <div class="border border-orange-200 text-accentorange rounded-full w-10 h-10 flex items-center justify-center shrink-0 text-lg bg-orange-50">
+                                <i class="fa-solid fa-mountain"></i>
+                            </div>
+                            <div>
+                                <strong class="text-darkblue text-sm block">PROSPECTOR (Geología)</strong>
+                                Ayudaba a identificar depósitos minerales usando conocimiento geológico.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-auto border-t border-gray-200 pt-4">
+                        <h4 class="text-accentblue font-bold text-center text-sm mb-3">APLICACIONES ACTUALES</h4>
+                        <div class="grid grid-cols-2 gap-x-2 gap-y-2 text-[11px] font-semibold text-darkblue">
+                            <div class="flex items-center gap-1"><i class="fa-solid fa-circle text-[5px] text-accentblue"></i> Diagnóstico médico</div>
+                            <div class="flex items-center gap-1"><i class="fa-solid fa-circle text-[5px] text-accentblue"></i> Soporte legal</div>
+                            <div class="flex items-center gap-1"><i class="fa-solid fa-circle text-[5px] text-accentblue"></i> Mantenimiento predictivo</div>
+                            <div class="flex items-center gap-1"><i class="fa-solid fa-circle text-[5px] text-accentblue"></i> Análisis financiero</div>
+                            <div class="flex items-center gap-1"><i class="fa-solid fa-circle text-[5px] text-accentblue"></i> Sistemas de recomendación</div>
+                            <div class="flex items-center gap-1"><i class="fa-solid fa-circle text-[5px] text-accentblue"></i> Control inteligente de procesos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1 bg-white border-2 border-darkblue overflow-hidden flex flex-col">
+                <div class="bg-darkblue text-white p-4 font-bold text-lg flex items-center gap-3">
+                    <i class="fa-solid fa-quote-left text-xl"></i> 6. REFLEXIÓN FINAL
+                </div>
+                <div class="p-6 flex flex-col gap-4 text-xs leading-relaxed text-justify relative z-10 flex-1">
+                    <p>
+                        Los sistemas expertos constituyeron uno de los primeros grandes éxitos de la inteligencia artificial al demostrar que el conocimiento humano puede formalizarse y utilizarse para resolver problemas reales.
+                    </p>
+                    <p>
+                        Hoy, aunque técnicas como el aprendizaje automático han ganado protagonismo, los sistemas expertos siguen siendo valiosos en dominios donde el conocimiento es explícito, crítico y debe ser explicado.
+                    </p>
+                    <p>
+                        En el futuro, su integración con la lógica difusa, el procesamiento del lenguaje natural y el aprendizaje automático híbrido permitirá construir sistemas más inteligentes, adaptativos y confiables, capaces de apoyar decisiones complejas en beneficio de la sociedad.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
